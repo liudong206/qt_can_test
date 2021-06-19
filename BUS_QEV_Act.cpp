@@ -137,8 +137,7 @@ void vehicle_acticvity::CAN_Data_Package_Func(void* srcdata,CanBusDataParam &can
 	        printf("i: %d ,canDataParm->elementList[i].canId: %X \n", i, canDataParm.elementList[i].canId);
 	        printf("i: %d ,canDataParm->elementList[i].data: %X %X %X %X %X %X %X %X\n", i, canDataParm.elementList[i].data[0], canDataParm.elementList[i].data[1], canDataParm.elementList[i].data[2],
 	        canDataParm.elementList[i].data[3], canDataParm.elementList[i].data[4], canDataParm.elementList[i].data[5], canDataParm.elementList[i].data[6], canDataParm.elementList[i].data[7]);
-	        std::cout << "********************************************************************************************************************" << std::endl;
-        }
+	        }
         i++;
     }
 }
@@ -178,7 +177,7 @@ extern void *key_control_fun(void* args)
 {
     vehicle::qev::Veh_Sub_Info ecu_tempDate;
     char c = '0';
-    std::cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,,please enter key:"<<std::endl;
+    std::cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,,please enter key:"<<std::endl;
     while (true) {
         c = getchar();
         if(c == 'w'){
@@ -204,7 +203,7 @@ extern int key_control_fun_(vehicle::qev::Veh_Sub_Info *ECUTempDate)
 {
     //byd::vehicle::qev::Veh_Sub_Info ecu_tempDate;
     int c = 0;
-    std::cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<please enter key:"<<std::endl;
+    std::cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<please enter key:"<<std::endl;
     std::cout<<"ecu_tempDate.TargetAccelerated"<<ECUTempDate->TargetAccelerated<<std::endl;
     std::cout<<"ecu_tempDate.TargetSteerAngle"<<ECUTempDate->TargetSteerAngle<<std::endl;
 while(1)
