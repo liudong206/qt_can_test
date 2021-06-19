@@ -20,7 +20,6 @@ vector<table_info_t> Veh_ECU_III_SUB_MESSAGE_TAB = {
  /*下发控车的报文0x3A3*/
 vector<table_info_t> Veh_ECU_I_SUB_MESSAGE_TAB = {
       {{1, 0}, {1, 1}, 2, 1.0, 0.0, VEHVLOC(DrivingModeReg)},
-     {{1, 7}, {1, 7}, 1, 1.0, 0.0, VEHVLOC(BreakLightBCM)},
      {{2, 0}, {3, 7}, 16, 0.1, -780, VEHVLOC(TargetSteerAngle)},
      {{5, 3}, {5, 4}, 2, 1.0, 0.0, VEHVLOC(DrivingModeFeedBack)},
       {{6, 0}, {7, 1}, 10, 1.0, 0.0, VEHVLOC(TargetSteerAngleSpeed)}
