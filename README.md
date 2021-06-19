@@ -1,1 +1,3 @@
 # qt_can_test
+#基于Ubuntu18.04环境下使用QT开发的模拟车辆CAN矩阵上报和下发的demo
+#将需要上传和下发的CAN矩阵放入table表中,每一个ID组成对应的MAP进行下发,简化后续代码量
